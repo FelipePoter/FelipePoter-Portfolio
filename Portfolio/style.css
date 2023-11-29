@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px 0 20px; /* Ajuste na margem top para dar mais espaço acima da seção de projetos */
+}
+
+.project {
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Adição da animação de transição */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do projeto ao passar o mouse sobre ele */
+}
+
+.project h2 {
+    color: #333;
+}
+
+.project p {
+    color: #555;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-content {
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.section-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
